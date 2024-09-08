@@ -90,3 +90,24 @@ print(reversed_substring)
 
 ###################################################################################
 
+# Task 6
+def SumIterative(number):
+    total = 0
+    while number > 0:
+        digit = number % 10
+        total += digit
+        number = number // 10
+    return total
+def SumRecursive(number):
+    if number == 0:
+        return 0
+    return number % 10 + SumRecursive(number // 10)
+number = int(input("Enter a number: "))
+if number == 0:
+    recursive_sum = 0
+else:
+    recursive_sum = SumRecursive(number)
+print(f"Sum of digits is: {recursive_sum}")
+
+###################################################################################
+
