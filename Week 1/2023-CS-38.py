@@ -43,3 +43,18 @@ if indices:
 else:
     print("Number Not found.")
 
+###################################################################################
+
+# Task 3
+def Minimum(Arr, starting, ending):
+    min_index = starting
+    for i in range(starting, ending + 1):
+        if Arr[i] < Arr[min_index]:
+            min_index = i
+    return min_index
+Arr = [3,4,7,8,0,1,23,-2,-5]
+starting = int(input("Starting Index: "))
+ending = int(input("Ending Index: "))
+index_of_min = Minimum(Arr, starting, ending)
+print(f"Index of minimum element: {index_of_min}")
+
