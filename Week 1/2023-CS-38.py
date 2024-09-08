@@ -170,3 +170,28 @@ else:
     print("Not Palindrom")
 
 ###################################################################################
+
+# Task 10
+def sort10(arr):
+    negative_numbers = [x for x in arr if x < 0]
+    positive_numbers = [x for x in arr if x >= 0]
+    negative_numbers.sort()
+    positive_numbers.sort()
+    result = []
+    n_index = 0
+    p_indx = 0
+    while n_index < len(negative_numbers) and p_indx < len(positive_numbers):
+        result.append(negative_numbers[n_index])
+        result.append(positive_numbers[p_indx])
+        n_index += 1
+        p_indx += 1
+    while p_indx < len(positive_numbers):
+        result.append(positive_numbers[p_indx])
+        p_indx += 1
+    while n_index < len(negative_numbers):
+        result.append(negative_numbers[n_index])
+        n_index += 1
+    return result
+input_array = [10, -1, 9, 20, -3, -8, 22, 9, 7]
+output_array = sort10(input_array)
+print(output_array)
