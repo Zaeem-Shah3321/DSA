@@ -135,3 +135,23 @@ for sum in col_sums:
 print()
 
 ###################################################################################
+
+# Task 8
+def SortedMerge(arr1, arr2):
+    merged = []
+    i = 0
+    j = 0
+    while (i < len(arr1) or j < len(arr2)):
+        if (i < len(arr1) and (j == len(arr2) or arr1[i] < arr2[j])):
+            merged.append(arr1[i])
+            i += 1
+        else:
+            merged.append(arr2[j])
+            j += 1
+    return merged
+A = [0, 3, 4, 10, 11]
+B = [1, 8, 13, 24]
+result = SortedMerge(A, B)
+print(result)
+
+###################################################################################
