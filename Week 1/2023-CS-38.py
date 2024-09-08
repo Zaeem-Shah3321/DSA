@@ -76,3 +76,17 @@ Arr = [3, 4, 7, 8, 0, 1, 23, -2, -5]
 sorted_Arr = Sort4(Arr)
 print(sorted_Arr)
 
+###################################################################################
+
+# Task 5
+def StringReverse(s, starting, ending):
+    substring = s[starting:ending]
+    return substring[::-1]
+starting_index = 27
+ending_index = 40  
+s = "University of Engineering and Technology Lahore"
+reversed_substring = StringReverse(s, starting_index, ending_index)
+print(reversed_substring)
+
+###################################################################################
+
