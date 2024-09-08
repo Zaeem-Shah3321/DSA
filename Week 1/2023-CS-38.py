@@ -155,3 +155,18 @@ result = SortedMerge(A, B)
 print(result)
 
 ###################################################################################
+
+# Task 9
+def PalindromRecursive(str):
+    if len(str) <= 1:
+        return True
+    if str[0] != str[-1]:
+        return False
+    return PalindromRecursive(str[1:-1])
+input_string = input("Write A Word: ")
+if PalindromRecursive(input_string):
+    print("Palindrom")
+else:
+    print("Not Palindrom")
+
+###################################################################################
