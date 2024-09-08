@@ -111,3 +111,27 @@ print(f"Sum of digits is: {recursive_sum}")
 
 ###################################################################################
 
+# Task 7
+def RowWiseSum(matrix):
+    return [sum(row) for row in matrix]
+def ColumnWiseSum(matrix):
+    num_columns = len(matrix[0])
+    column_sums = [0] * num_columns
+    for row in matrix:
+        for i in range(num_columns):
+            column_sums[i] += row[i]
+    return column_sums
+A = [[1, 13, 13],
+    [5, 11, 6],
+    [4, 4, 9]]
+row_sums = RowWiseSum(A)
+print("Row-wise:")
+for sum in row_sums:
+    print(sum) 
+col_sums = ColumnWiseSum(A)
+print("Column-wise:", end=" ")
+for sum in col_sums:
+    print(sum, end=" ")  
+print()
+
+###################################################################################
