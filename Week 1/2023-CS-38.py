@@ -58,3 +58,21 @@ ending = int(input("Ending Index: "))
 index_of_min = Minimum(Arr, starting, ending)
 print(f"Index of minimum element: {index_of_min}")
 
+###################################################################################
+
+# Task 4
+def Minimum(Arr, starting, ending):
+    min_index = starting
+    for i in range(starting, ending + 1):
+        if Arr[i] < Arr[min_index]:
+            min_index = i
+    return min_index
+def Sort4(Arr):
+    for i in range(len(Arr)):
+        min_index = Minimum(Arr, i, len(Arr) - 1)
+        Arr[i], Arr[min_index] = Arr[min_index], Arr[i]    
+    return Arr
+Arr = [3, 4, 7, 8, 0, 1, 23, -2, -5]
+sorted_Arr = Sort4(Arr)
+print(sorted_Arr)
+
