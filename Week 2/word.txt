@@ -1,0 +1,5 @@
+apple banana cherry date elderberry fig grape honeydew
+kiwi lemon mango nectarine orange papaya quince raspberry
+strawberry tangerine ugli fruit vanilla watermelon xigua
+yellow zucchini 123 456 789 !@# $%^ &*() -_+=
+hello world test example data random string for sorting
