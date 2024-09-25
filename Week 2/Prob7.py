@@ -23,7 +23,7 @@ def write_in_file(filename, row):
     with open(filename, 'a', newline='') as file:
         writer = csv.writer(file)
         if not file_exists:
-            writer.writerow(['n', 'InsertionSortTime(s)', 'MergeSortTime(s)', 'HybridMergeSortTime(s)', 'SelectionSortTime(s)', 'BubbleSortTime(s)'])
+            writer.writerow(['n', 'BubbleSortTime(s)' , 'SelectionSortTime(s)' , 'InsertionSortTime(s)', 'MergeSortTime(s)', 'HybridMergeSortTime(s)'])
         writer.writerow(row)
 
 n_values = read_n_values('Nvalues.txt')
