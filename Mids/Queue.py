@@ -44,5 +44,23 @@ class Queue:
 
     def display(self):
         if self.isEmpty():
-            raise Exception("Queue is empty")
-        return self.front.value
+            return "Queue is empty"
+        current = self.front
+        values = []
+        while current:
+            values.append(str(current.value))
+            current = current.next
+        return " ".join(values)
+
+
+
+
+
+q = Queue()
+
+q.enqueue(10)
+q.enqueue(20)
+q.enqueue(30)
+q.enqueue(40)
+q.dequeue()
+print(q.display())

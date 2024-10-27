@@ -8,26 +8,6 @@ class stack:
         self.head = Node("head") 
         self.size = 0
 
-    def __str__(self):
-        values = []
-        current = self.head.next
-        while current:
-            values.append(str(current.value))
-            current = current.next
-        return " ".join(values)
-
-
-    def len(self):
-        return self.size
-
-    def isEmpty(self):
-        return self.size == 0
-
-    def display(self):
-        if self.isEmpty():
-            return None
-        return self.head.next.value
-
     def push(self, value):
         node = Node(value)
         node.next = self.head.next 
@@ -35,25 +15,27 @@ class stack:
         self.size += 1
 
     def pop(self):
-        if self.isEmpty():
-            raise Exception("Popping from an empty stack")
         remove = self.head.next
         self.head.next = remove.next 
         self.size -= 1
         return remove.value
-
-    def copy(self):
-        new_stack = stack()
-        current = self.head.next
-        temp_list = []
-
-        while current:
-            temp_list.append(current.value)  
-            current = current.next
-
-        for value in reversed(temp_list):
-            new_stack.push(value)  
-
-        return new_stack
     
+    def display(self):
+        cr = self.head
+        val = []
+        while cr:
+            val.append(str(cr.value))
+            cr = cr.next
+        return " ".join(val) 
+
+
+
+
+s = stack()
+s.push(1)
+s.push(2)
+s.push(3)
+
+s.pop()
+print(s.display())
 
