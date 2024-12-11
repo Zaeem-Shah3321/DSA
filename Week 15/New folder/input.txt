@@ -1,0 +1,99 @@
+hbddif __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")
+if __name__ == "__main__":
+    # Compress a file
+    HuffmanFileCompressor.compress_file("input.txt", "compressed.huff")
+
+    # Decompress the file
+    HuffmanFileCompressor.decompress_file("compressed.huff", "output.txt")
+
+    # Check if the decompressed file matches the original
+    with open("input.txt", "rb") as original, open("output.txt", "rb") as decompressed:
+        assert original.read() == decompressed.read(), "Decompressed file does not match original!"
+    print("Compression and decompression successful!")

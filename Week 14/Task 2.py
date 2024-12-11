@@ -6,7 +6,7 @@ class FinancialCalculator:
         stack = [] 
         output = ''
         for ch in expression:
-            if ch not in self.operators:  
+            if ch not in self.operators: 
                 output+= ch
             elif ch=='(': 
                 stack.append('(')
