@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1SUMMARY</title> 
+</head>
+<body><style>
+    /* Your existing styles here */
+    hr {
+        border: none;
+        border-top: 2px solid #0073e6; /* Blue color matching your h1 */
+        margin: 20px 0; /* Adjust margin for spacing */
+    }
+
+    /* Additional CSS styles */
+    /* Style the body background with a gradient */
+    body {
+        background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
+    }
+
+    /* Style the h1 with a background gradient, rounded corners, and box shadow */
+    h1 {
+        background: linear-gradient(to bottom, #1e90ff, #0073e6);
+        border: 1px solid #0073e6;
+        padding: 15px;
+        border-radius: 15px;
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    /* Add a subtle hover effect to links */
+    a:hover {
+        color: #ff4d26; /* Change link color on hover to orange-red */
+    }
+
+    /* Add a subtle box shadow and background to list items on hover */
+    li:hover {
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    /* Create a bordered and rounded box for code snippets */
+    code {
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Improve spacing and typography for better readability */
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Add a subtle box shadow and background to the entire ordered list */
+    ol {
+        border: 2px solid #0073e6;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Change text color for specific list items */
+    li:nth-child(4n+1) {
+        color: #FFA500; /* Change text color to orange */
+        font-weight: bold;
+    }
+</style>
+    <h1 id="h1">
+        SUMMARY
+    </h1>
+    <p>
+        <ol>
+            <li>
+                WHAT IS A GRAPH? <br>
+
+                A linear† graph (or simply a graph) G = (V, E) consists of a set of objects V =
+                {v1 v2
+                , . . .} called vertices, and another set E = {e1’ e2
+                ,. . .}, whose elements are
+                called edges, such that each edge ek
+                is identified with an unordered pair (vi
+                , vj
+                ) of
+                vertices
+                <br>
+                <br>
+            <li>FINITE AND INFINITE GRAPHS <br>
+                
+                Although in our definition of a graph neither the vertex set V nor the edge set
+                E need be finite, in most of the theory and almost all applications these sets are
+                finite. A graph with a finite number of vertices as well as a finite number of
+                edges is called a finite graph; otherwise, it is an infinite graph. 
+                <br>
+                <br>
+
+                <li>A vertex having no incident edge is called an isolated vertex. <br>
+
+                    <li>A vertex of degree one is called a pendant vertex
+or an end vertex.  <br>
+                        <li> A graph without any edges, is called a null graph. <br><br>
+                            <li>. SUBGRAPHS <br>
+                                A graph g is said to be a subgraph of a graph G if all the vertices and all the
+                                edges of g are in G, and each edge of g has the same end vertices in g as in G. <br>
+
+                                <li> 1]. Every graph is its own subgraph.
+<br>
+2]. A subgraph of a subgraph of G is a subgraph of G.
+<br>3]. A single vertex in a graph G is a subgraph of G.
+<br>
+4]. A single edge in G, together with its end vertices, is also a subgraph <br>
+<br>
+                                    <li> WALK <br>
+
+                                        A walk is defined as a finite alternating sequence of vertices and edges,
+                                        beginning and ending with vertices, such that each edge is incident with the
+                                        vertices preceding and following it. No edge appears (is covered or traversed)
+                                        more than once in a walk. <br><br>
+
+                                        <li>Vertices with which a walk begins and ends are called its terminal vertices.
+                                            Vertices v1 and v5 are the terminal vertices of the walk. It is
+                                            possible for a walk to begin and end at the same vertex. Such a walk is called a
+                                            closed walk. A walk that is not closed (i.e., the terminal vertices are distinct) is
+                                            called an open walk <br> <br></br>
+                                            <li>    An open walk in which no vertex appears more than once is called a path <br>
+                                                <li>A closed walk in which no vertex (except the initial and the final vertex)
+                                                    appears more than once is called a circuit <br>
+                                                        <br>
+                                                    <li>A circuit is also called a cycle, elementary cycle, circular path, and polygon.
+In electrical engineering a circuit is sometimes referred to as a loop—not to be
+confused with self-loop. (Every self-loop is a circuit, but not every circuit is a
+self-loop.) <br><br>
+
+
+                                                        <li>A graph is connected if
+                                                            we can reach any vertex from any other vertex by traveling along the edges.
+                                                            More formally:
+                                                            A graph G is said to be connected if there is at least one path between every
+                                                            pair of vertices in G. Otherwise, G is disconnected. <br>
+                                                            <br>
+
+                                                            <li>If a graph (connected or disconnected) has exactly two vertices of odd degree,
+there must be a path joining these two vertices. <br> <br>
+                                                                <li>graph G is it possible to find a closed walk running through every edge of G
+                                                                    
+                                                                    exactly once? Such a walk is now called an Euler line, and a graph that consists
+                                                                    of an Euler line is called an Euler graph. More formally:
+                                                                    If some closed walk in a graph contains all the edges of the graph, then the
+                                                                    walk is called an Euler line and the graph an Euler graph. <br><br>
+                                                                    
+                                                                    
+                                                                    <li>A given connected graph G is an Euler graph if and only if all vertices of G
+                                                                        are of even degree. <br><br>
+                                                                        <li>Hamiltonian circuit in a connected graph is defined as a closed walk that
+                                                                            traverses every vertex of G exactly once, except of course the starting vertex, at
+                                                                            which the walk also terminates <br><br>
+                                                                            <li>A circuit in a connected graph G is said to be Hamiltonian if it includes every
+                                                                                vertex of G. Hence a Hamiltonian circuit in a graph of n vertices consists of
+                                                                                exactly n edges. <br><br>
+
+                                                                                <li>Hamiltonian Path: If we remove any one edge from a Hamiltonian circuit, we
+are left with a path. This path is called a Hamiltonian path. <br>  <br>
+                                                                                   <li>In considering the existence of a Hamiltonian circuit (or path), we need only
+                                                                                    consider simple graphs. This is because a Hamiltonian circuit (or path) traverses
+                                                                                    every vertex exactly once. <br><br>
+                                                                                        <li>Complete Graph: A simple graph in which there exists an edge between every
+                                                                                            pair of vertices is called a complete graph. <br> <br>
+                                                                                            <li>In a complete graph with n vertices there are (n − l)/2 edge-disjoint
+                                                                                                Hamiltonian circuits, if n is an odd number ≥ 3. <br><br>
+
+                                                                                                <li>TREES <br>
+A tree is a connected graph without any circuits. The graph in  for
+instance, is a tree. Trees with one, two, three, and four vertices are shown in As pointed out in Chapter 1, a graph must have at least one vertex, and
+therefore so must a tree. Some authors allow the null tree, a tree without any
+vertices. We have excluded such an entity from being a tree. Similarly, as we are
+considering only finite graphs, our trees are also finite. <br><br>
+                                                                                                    <li>1].There is one and only one path between every pair of vertices in a tree, T. <br>
+                                                                                                            2]. If in a graph G there is one and only one path between every pai of vertices,
+                                                                                                            G is a tree. <br>
+                                                                                                            3]. A tree with n vertices has n − 1 edges. <br>
+                                                                                                            4]. Any connected graph with n vertices and n − 1 edges is a tree. <br>
+                                                                                                            5]. A graph is a tree if and only if it is minimally connected. <br>
+                                                                                                            6]. A graph G with n vertices, n − 1 edges, and no circuits is connected.                                                                                
+                                                                                                            <br><br>
+
+                                                                                                        <li>A graph G with n vertices, n − 1 edges, and no circuits is connected. <br><br>
+                                                                                                            <li>A binary tree is defined as a tree in which there is exactly one vertex of
+                                                                                                                degree two, and each of the remaining vertices is of degree one or three <br><br>
+                                                                                                                <li>A tree T is said to be a spanning tree of a connected graph G if T is a subgraph
+                                                                                                                    of G and T contains all vertices of G. <br><br>
+                                                                                                                    <li>It is to be noted that a spanning tree is defined only for a connected graph,
+                                                                                                                        because a tree is always connected, and in a disconnected graph of n vertices we
+                                                                                                                        cannot find a connected subgraph with n vertices. <br><br>
+                                                                                                                        <li>spanning tree of a connected graph G is simple. If G has no circuit,
+                                                                                                                            it is its own spanning tree. If G has a circuit, delete an edge from the circuit. <br><br>
+                                                                                                                        <li>With respect to any of its spanning trees, a connected graph of n vertices and e
+                                                                                                                            edges has n − 1 tree branches and e − n + 1 chords. <br><br>
+                                                                                                                            
+                                                                                                                            <li>rank r = m − n + 1 <br><br>
+                                                                                                                                <li>A spanning tree T (of a given weighted connected graph G) is a shortest
+                                                                                                                                    spanning tree (of G) if and only if there exists no other spanning tree (of G) at a
+                                                                                                                                    distance of one from T whose weight is smaller than that of T. <br><br>
+                                                                                                                                 </li>
+                                                                                                                            </li>
+                                                                                                                            </li>
+                                                                                                                        </li>
+                                                                                                                        </li>
+                                                                                                                    </li>
+                                                                                                                </li>
+                                                                                                            </li>
+                                                                                                        </li>
+                                                                                                    </li>
+                                                                                                </li>
+                                                                                            </li>
+                                                                                        </li>
+                                                                                    </li>
+                                                                                </li>
+                                                                            </li>
+                                                                        </li>
+                                                                    </li>
+                                                                </li>
+                                                            </li>
+                                                        </li>
+                                                    </li>
+
+                                                </li>
+                                            </li>
+                                        </li>
+                                    </li>
+                                </li>
+                            </li>
+                        </li>
+                    </li>
+                </li>
+            </li>
+            <li>
+
+            </li>
+        </li>
+        </ol>
+    </p>
+    
+</body>
+</html>

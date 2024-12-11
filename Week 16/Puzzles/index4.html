@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cross word</title>
+    <script>
+        function checkAnswer(){
+            let Answer ="'"+ document.querySelector("input").value+"'";
+            for(let node of document.querySelectorAll("td")){
+                if(node.className.indexOf(Answer)>=0){
+                    node.style = "color:black";
+
+                }
+            }
+            document.querySelector("input").value = "";
+        }
+    </script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: white;
+        }
+        td:empty{
+            background-color: black;
+        }
+        sup{
+            color: black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'peterson'"> N   </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'"><sup>4</sup>C </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'hamiltonian'"><sup>2</sup> H</td>
+            <td></td>
+            <td></td>
+            <td class="'peterson'"> O   </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'">O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="'hand shaking'"><sup>6</sup>H</td>
+            <td class="'hand shaking''hamiltonian'">A</td>
+            <td class="'hand shaking'">N</td>
+            <td class="'hand shaking'">D</td>
+            <td class="'peterson' 'hand shaking'">   S </td>
+            <td class="'hand shaking'">H</td>
+            <td class="'hand shaking'">A</td>
+            <td class="'hand shaking'">K</td>
+            <td class="'hand shaking'">I</td>
+            <td class="'hand shaking ''connected' ">N</td>
+            <td class="'hand shaking'">G</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'hamiltonian'">M</td>
+            <td></td>
+            <td></td>
+            <td class="'peterson'"> R   </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'">N</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'hamiltonian'">I</td>
+            <td></td>
+            <td></td>
+            <td class="'peterson'">  E  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="'hamiltonian'">L</td>
+            <td class="'spanning'">G</td>
+            <td></td>
+            <td class="'peterson' 'tree'"><sup>7</sup> T   </td>
+            <td class="'tree'">R</td>
+            <td class="'tree'">E</td>
+            <td class="'tree'">E</td>
+            <td></td>
+            <td class="'connected'">C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'hamiltonian'">T</td>
+            <td class="'spanning'">N</td>
+            <td></td>
+            <td class="'peterson'">  E  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'">T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="'hamiltonian'">O</td>
+            <td class="'spanning'">I</td>
+            <td></td>
+            <td class="'peterson' 'path'"> <sup>1</sup> P  </td>
+            <td class="'path'"><sup>11</sup>A</td>
+            <td class="'path'">T</td>
+            <td class="'path'">H</td>
+            <td></td>
+            <td class="'connected'">E</td>
+            <td class="'degree'">E</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="'hamiltonian'">N</td>
+            <td class="'spanning' 'null'"><sup>8</sup>N</td>
+            <td class="'null'">U</td>
+            <td class="'null'">L</td>
+            <td class="'null'">L</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'">D</td>
+            <td class="'degree'">E</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="'binary'">B <sup>9</sup></td>
+            <td class="'binary' 'hamiltonian'">I</td>
+            <td class="'spanning' 'binary'">N</td>
+            <td class="'binary'">A</td>
+            <td class="'binary'">R</td>
+            <td class="'binary'">Y</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'"></td>
+            <td class="'degree'">R</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="'hamiltonian'">A</td>
+            <td class="'spanning'">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'"></td>
+            <td class="'degree'">G</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'hamiltonian'">N</td>
+            <td class="'spanning'"><sup></sup>P</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'"></td>
+            <td class="'degree'">  E</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'spanning'"><sup>3</sup>S</td>
+            <td class="'isolated'">I <sup>10</sup></td>
+            <td class="'isolated'">S</td>
+            <td class="'isolated'">O</td>
+            <td class="'isolated'">L</td>
+            <td class="'isolated'">A</td>
+            <td class="'isolated'">T</td>
+            <td class="'isolated'">E</td>
+            <td class="'isolated' 'degree'"><sup>5</sup>D</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'connected'"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      
+    </table>
+    <br>
+
+    <form onsubmit="javascript:checkAnswer()" action="javascript:null">
+        <input placeholder="Answer submit here"/>
+    </form>
+    <br>
+    <br>
+
+    <h2>
+        Accrosswords
+    </h2>
+    <ol>
+        <li>
+             1).A is not having hamiltonian circuit is called_______
+            <li>2).A ______ in a graph G is a circuit which consists of every vertex (except first/last vertex) of G exactly once.
+
+                <li>3).we can not get ______________ for disconnected graph 
+                    <li>4).At least one path between every pair of vertex is called_______
+                        <!-- <li>a graph have exactly one vertex is called_______ -->
+                            <li>
+                               5). A vertex is the number of edges is called is called_______
+                            </li>
+                        </li>
+                    </li>
+                </li>
+            </li>
+        </li>
+    </ol>
+    <h2>
+        Downwords
+    </h2>
+    <ol>
+        <li>6). A  theorem of graph theory is_______
+           <li>7). An undirected graph G which is connected and acyclic is called ____________
+            <li> 11). An open walks is called a _______
+                <li>8). A graph have no egdes
+                    <li>9).A tree in which there is exactly one vertex with degree two is called a _______
+                        <li>
+                           10).If the degree is zero, it is called an______
+                        </li>
+                    </li>
+                </li>
+            </li>
+           </li>
+        </li>
+    </ol>
+   
+</body>
+</html>

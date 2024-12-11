@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cross word</title>
+    <script>
+        function checkAnswer(){
+            let Answer ="'"+ document.querySelector("input").value+"'";
+            for(let node of document.querySelectorAll("td")){
+                if(node.className.indexOf(Answer)>=0){
+                    node.style = "color:black";
+
+                }
+            }
+            document.querySelector("input").value = "";
+        }
+    </script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: white;
+        }
+        td:empty{
+            background-color: black;
+        }
+        sup{
+            color: black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td></td>
+            <td class="'simple'"><sup>1</sup>S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td  ></td>
+            <td class="'trivial'"><sup>5</sup>T</td>
+            <td class="'trivial'" >R</td>
+            <td class="'trivial' 'simple'">I</td>
+            <td class="'trivial'">V</td>
+            <td class="'trivial'">I</td>
+            <td class="'trivial'  ">A</td>
+            <td class="'trivial'">L</td>
+            <td class="'eular'"><sup>4</sup>E</td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td></td>
+            <td class="'simple'"> M   </td>
+            <td></td>
+            <td></td>
+            <td class="'complete'">E</td>
+            <td></td>
+            <td class="'eular'">U</td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td class="'path'"><sup>6</sup>H</td>
+            <td  class="'path'">T</td>
+            <td class="'path'">A</td>
+            <td class="'path' 'simple'">P</td>
+            <td></td>
+            <td></td>
+            <td class="'complete'">T</td>
+            <td></td>
+            <td class="'eular'">L</td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td></td>
+            <td class="'simple'">L</td>
+            <td></td>
+            <td></td>
+            <td class="'complete'">E</td>
+            <td></td>
+            <td class="'eular'">A</td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td class="'regular'"><sup>7</sup>R</td>
+            <td class="'regular' 'simple'">E</td>
+            <td class="'regular'">G</td>
+            <td class="'regular'">U</td>
+            <td class="'regular''complete'">L</td>
+            <td class="'regular'">A</td>
+            <td class="'eular' 'regular'">R</td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td class="'degree'"><sup>8</sup>D</td>
+            <td class="'degree' 'tree'" >E</td>
+            <td class="'degree'">G</td>
+            <td class="'degree'">R</td>
+            <td  class="'degree'">E</td>
+            <td class="'degree'">E</td>
+            <td class="'complete'">M</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td class="'tree'">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="'complete'">O</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td class="'tree'" >R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'complete'"><sup>3</sup>C</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td class="'tree'" ><sup>2</sup>T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      
+    </table>
+    <br>
+    <br>
+    <form onsubmit="javascript:checkAnswer()" action="javascript:null">
+        <input placeholder="Answer submit here"/>
+    </form>
+    <h2>
+        AcrossWords
+    </h2>
+    <ol>
+        <li>
+            7). A graph in which all nodes are of equal degree is called________
+        </li>
+        <li>
+            5). A graph have only one vertex_____graph
+        </li>
+        <li>
+            8). A vertex is the number of edges is called_______
+        </li>
+        <li>
+           6). A graph have open walks is called_______
+        </li>
+    </ol>
+    <h2>
+        DownWords
+    </h2>
+    <ol>
+        <li>
+           1). A bridge can not be a part of _______cycle.
+        </li>
+        <li>
+           4). A graph is possible when all degree are same______
+        </li>
+        <li>
+           2). An undirected graph G which is connected and acyclic is called ____________
+        </li>
+        <li>
+            3).The graph representing universal relation is called _______ 
+        </li>
+    </ol>
+    
+</body>
+</html>

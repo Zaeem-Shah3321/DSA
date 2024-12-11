@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cross word</title>
+    <script>
+        function checkAnswer(){
+            let Answer ="'"+ document.querySelector("input").value+"'";
+            for(let node of document.querySelectorAll("td")){
+                if(node.className.indexOf(Answer)>=0){
+                    node.style = "color:black";
+
+                }
+            }
+            document.querySelector("input").value = "";
+        }
+    </script>
+    <style>
+
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: white;
+        }
+        td:empty{
+            background-color: black;
+        }
+        sup{
+            color: black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td  class="'adjecent'"><sup>1</sup>A</td>
+            <td class="'adjecent' 'degree'"><sup>2</sup>D</td>
+            <td class="'adjecent'">J</td>
+            <td class="'adjecent'">E</td>
+            <td class="'adjecent'">C</td>
+            <td class="'adjecent' 'tree'">E</td>
+            <td class="'adjecent'">N</td>
+            <td class="'adjecent''circuit'">T</td>
+            <td class="'adjecent'"></td>
+            <td class="'adjecent'"></td>
+        </tr>
+        <tr>
+            <td  ></td>
+            <td class="'degree'">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'tree'">E</td>
+            <td></td>
+            <td class="'circuit'" >I</td>
+            <td></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td class="'degree'" >G</td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td class="'tree'">R</td>
+            <td></td>
+            <td  class="'circuit'"  >U</td>
+            <td></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td  class="'degree'">R</td>
+            <td></td>
+            <td class="'path'"><sup>4</sup>P</td>
+            <td class="'path'">A</td>
+            <td class="'tree''path'"><sup>5</sup>T</td>
+            <td class="'path'">H</td>
+            <td class="'circuit'"  >C</td>
+            <td ></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td  class="'degree'" >E</td>
+            <td class="'forest'">T</td>
+            <td class="'eular'"><sup>7</sup>E </td>
+            <td class="'eular'">U</td>
+            <td class="'eular'">L</td>
+            <td class="'eular'">A</td>
+            <td class="'circuit' 'eular'" >R</td>
+            <td></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="'degree'">E</td>
+            <td class="'forest'">S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'circuit'" >I</td>
+            <td></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td class="'forest'">E</td>
+            <td></td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td class="'circuit'"  ><sup>6</sup>C</td>
+            <td ></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td class="'binary'">Y</td>
+            <td class="'forest''binary'">R</td>
+            <td class="'binary'">A</td>
+            <td class="'binary'">N</td>
+            <td class="'binary'">I</td>
+            <td class="'binary'"><sup>3</sup>B</td>
+            <td></td>
+            <td></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td class="'forest'">O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td class="'forest'"><sup>8</sup>F</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      
+    </table>
+
+    <br>
+    <br>
+    <form onsubmit="javascript:checkAnswer()" action="javascript:null">
+        <input placeholder="Answer submit here"/>
+    </form>
+    <br>
+
+    <h2>
+        AcrossWord
+    </h2>
+    <ol>
+        <li>
+           1). two non parallel edges maintained by single vertex  
+        </li>
+        <li>
+            4). An open walks is called as a
+        </li>
+        <li>
+           7). A graph is possible when all degree are even _________graph
+        </li>
+        <li>
+            3).  A tree in which there is exactly one vertex at degree two______tree
+
+        </li>
+    </ol>
+    <h2>
+        DownWord
+    </h2>
+    <ol>
+        <li>
+            2). A vertex is the number of edges is called________of vertex
+        </li>
+        <li>
+            8). A disjoint collection of tree_______
+        </li>
+        <li>
+        
+           6). If first vertex and last vertex are same
+        </li>
+        <li>
+           5). An  acyclic graph is know as_____
+        </li>
+    </ol>
+   
+</body>
+</html>
